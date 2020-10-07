@@ -95,7 +95,10 @@ function buildCharts(sample) {
     type: "bar",
     orientation: "h",
     hoverinfo: "text",
-    hovertext: otu_labels
+    hovertext: otu_labels,
+    marker: {
+      color: [1,2,3,4,5,6,7,8,9,10],
+      colorscale: "Viridis"}
   };
   var data = [trace];
 
@@ -117,8 +120,8 @@ function buildCharts(sample) {
     mode: "markers",
     marker: {
       size: sample_values,
-      color: parseInt([otu_labels]),
-      colorscale: "Earth"
+      color: [1,2,3,4,5,6,7,8,9,10],
+      colorscale: "Viridis"      
     }
   }];
   
@@ -146,13 +149,13 @@ function buildCharts(sample) {
         font:{ size: 24}},
       gauge: {
         axis: { range: [null, 10]},
-        bar: { color: "black" },
+        bar: { color: "#fde725" },
         steps: [
-          { range: [0,2], color: "red"},
-          { range: [2,4], color: "orange"},
-          { range: [4,6], color: "yellow"},
-          { range: [6,8], color: "lightgreen"},
-          { range: [8,10], color: "green"}
+          { range: [0,2], color: "#440154"},
+          { range: [2,4], color: "#31688e"},
+          { range: [4,6], color: "#21918c"},
+          { range: [6,8], color: "#35b779"},
+          { range: [8,10], color: "#90d743"}
         ]}
     }];
       
