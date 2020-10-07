@@ -103,14 +103,15 @@ function buildCharts(sample) {
   var data = [trace];
 
     // 9. Create the layout for the bar chart. 
-  var layout = {
+    var config = { responsive: true}
+    var layout = {
     title: "Top 10 Bacteria Cultures Found",
     xaxis: { title: "Sample Amount" },
     yaxis: { autorange: "reversed" }
   };
 
     // 10. Use Plotly to plot the data with the layout. 
-  Plotly.newPlot("bar", data,layout)
+  Plotly.newPlot("bar", data,layout,config)
   
   // Del2.1. Create the trace for the bubble chart.
   var bubbleData = [{
@@ -136,7 +137,7 @@ function buildCharts(sample) {
     };
   
   // Del2.3. Use Plotly to plot the data with the layout.
-  Plotly.newPlot("bubble", bubbleData, bubbleLayout)
+  Plotly.newPlot("bubble", bubbleData, bubbleLayout,config)
   
   // Del3.4. Create the trace for the gauge chart.
   var gaugeData = [
@@ -160,12 +161,13 @@ function buildCharts(sample) {
     }];
       
   // Del3.5. Create the layout for the gauge chart.
+  
   var gaugeLayout = { 
     width: 500,
     height: 400,
-    margin: { t: 25, r: 25, l: 25, b: 25 }
+    margin: { t: 40, r: 40, l: 40, b: 40 }
     };
   
   // Del3.6. Use Plotly to plot the gauge data and layout.
-  Plotly.newPlot('gauge', gaugeData, gaugeLayout); 
+  Plotly.newPlot('gauge', gaugeData, gaugeLayout, config); 
 })};
