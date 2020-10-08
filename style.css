@@ -1,5 +1,8 @@
-#sample-metadata>h6 {
+#sample-metadata *{
+    align-items: center !important;
     align-content: center !important;
+}
+#sample-metadata>h6 {
     border: inset !important;
     display: inline !important;
     padding-right: 10px !important;
