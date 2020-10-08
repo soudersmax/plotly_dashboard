@@ -8,7 +8,7 @@ Client is a researcher attempting to locate a protein that replicates the taste 
 
 ## Details
 
-The dashboard can be viewed at [soudersmax.github.io/plotly_dashboard/](https://github.com/soudersmax/plotly_dashboard/) . 
+The dashboard can be viewed at [soudersmax.github.io/plotly_dashboard/](https://soudersmax.github.io/plotly_dashboard/) . 
 
 
 
